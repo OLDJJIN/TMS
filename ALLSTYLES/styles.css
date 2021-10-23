@@ -1,0 +1,145 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-color: black;
+}
+
+.header > div > div > img {
+  padding-top: 18px;
+  padding-left: 143px;
+  margin-right: 700px;
+  padding-bottom: 19px;
+}
+
+.list nav ul {
+  display: flex;
+  list-style: none;
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+
+.list nav ul li {
+  color: white;
+}
+
+.header2 {
+  display: flex;
+}
+
+.list nav > ul > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.awesome {
+  text-align: center;
+  padding: 100px 495px 0px 500px;
+}
+
+.awesome > h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #212121;
+  margin-bottom: 25px;
+}
+.awesome > hr {
+  width: 64px;
+  height: 2px;
+  margin-bottom: 30px;
+  background: #ff8b38;
+  border: 1px solid #ff8b38;
+}
+.awesome > p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #86878b;
+  margin-bottom: 65px;
+}
+.block {
+  padding: 0px 145px 0px 145px;
+  display: flex;
+  flex: 1;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  padding: 0 15px;
+}
+
+.article > h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 27px;
+}
+.article > p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.town {
+  text-align: center;
+  background-image: url(../images/town.png);
+  background-color: rgba(0, 0, 0, 0, 65);
+  margin-bottom: 100px;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.stylish {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 76px;
+  color: white;
+  
+}
+.hr1 {
+  width: 64px;
+  height: 2px;
+  margin-bottom: 30px;
+}
+
+.h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+ height: 42px;
+ width: 135px;
+ border: 1px solid white;
+ background: rgba(196, 196, 196, 0);
+color: #FFFFFF;
+ 
+ margin-top: 30px;
+ margin-bottom: 38px;
+
+
