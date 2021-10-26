@@ -100,6 +100,10 @@
   background-color: rgba(0, 0, 0, 0, 65);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 326px;
+  z-index: 2;
+  filter: brightness(50%);
+  background: transparent (65);
 }
 .stylish {
   font-family: "Raleway";
