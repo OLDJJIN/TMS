@@ -5,6 +5,8 @@
 }
 .header {
   background-color: black;
+  position: fixed;
+  width: 100%;
 }
 
 .header > div > div > img {
@@ -67,6 +69,7 @@
   padding: 0px 145px 0px 145px;
   display: flex;
   flex: 1;
+  margin-bottom: 96px;
 }
 .article {
   display: flex;
@@ -93,7 +96,10 @@
   margin-top: 16px;
   text-align: center;
 }
-
+.town div {
+  position: relative;
+  z-index: 6;
+}
 .town {
   text-align: center;
   background-image: url(../images/town.png);
@@ -101,9 +107,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 326px;
-  z-index: 2;
-  filter: brightness(50%);
-  background: transparent (65);
+  position: relative;
+  z-index: 3;
+
+  /* filter: brightness(50%); */
+}
+.town::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
 }
 .stylish {
   font-family: "Raleway";
@@ -167,4 +185,191 @@ h4 {
   color: rgba(255, 255, 255, 0.5);
   padding-top: 18px;
   padding-bottom: 15px;
+}
+
+.options {
+  text-align: center;
+  margin-bottom: 47px;
+}
+.PRICING-OPTIONS {
+  padding-top: 80px;
+  background: rgba(245, 245, 245, 1);
+}
+.pricing {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.hr2 {
+  width: 64px;
+  height: 2px;
+  margin-bottom: 30px;
+  background: #ff8b38;
+  border: 1px solid #ff8b38;
+}
+.lorem {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+  text-align: center;
+}
+.price-list0 {
+  justify-content: space-around;
+  display: flex;
+}
+
+.price-list1 li {
+  height: 40px;
+  margin: 2px 0;
+  text-align: center;
+  background-color: white;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.price-list1 li span {
+  display: block;
+  margin: auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.price-list1 li:nth-child(-n + 3) {
+  background: rgba(51, 51, 51, 1);
+  padding: 15px 144px 8px;
+  color: white;
+}
+.price-list2 li:nth-child(-n + 3) {
+  background: rgba(51, 51, 51, 1);
+
+  padding: 15px 144px 8px;
+  color: white;
+}
+
+.price-list3 li:nth-child(-n + 3) {
+  background: rgba(51, 51, 51, 1);
+
+  padding: 15px 144px 8px;
+  color: white;
+}
+
+.price-list1 li:nth-child(n + 3) {
+  padding: 10px 123px 11px 131px;
+}
+.price-list2 li:nth-child(n + 3) {
+  padding: 10px 123px 11px 131px;
+}
+.price-list3 li:nth-child(n + 3) {
+  padding: 10px 123px 12px 131px;
+}
+.price-list1 li:nth-child(2) {
+  padding: 26px 144px 33px 152px;
+}
+.price-list2 li:nth-child(2) {
+  padding: 26px 144px 33px 152px;
+}
+.price-list3 li:nth-child(2) {
+  padding: 26px 144px 33px 152px;
+}
+.price-list2 li {
+  height: 40px;
+  margin: 2px 0;
+  text-align: center;
+  background-color: white;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.price-list2 li span {
+  display: block;
+  margin: auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.price-list1 li:nth-child(2) span {
+  font-size: 35px;
+}
+.price-list2 li:nth-child(2) span {
+  font-size: 35px;
+}
+.price-list3 li:nth-child(2) span {
+  font-size: 35px;
+}
+.price-list3 li {
+  height: 40px;
+  margin: 2px 0;
+  text-align: center;
+  background-color: white;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.price-list3 li span {
+  display: block;
+  margin: auto;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.price-list0 div:not(:nth-child(2)) {
+  padding-top: 20px;
+}
+.comments {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+.info {
+  background: rgba(226, 226, 226, 1);
+  width: 270px;
+  height: 140px;
+  left: 171px;
+  top: 264px;
+  border-radius: 7px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #86878b;
+}
+.abc {
+  display: flex;
+  padding: 20px 40px 0px 45px;
+}
+.abc img {
+  width: 70px;
+  height: 70px;
+  margin-right: 45px;
+}
+.abc div h3 {
+  padding-left: 15px;
+}
+.abc div h6 {
+  padding-left: 60px;
 }
