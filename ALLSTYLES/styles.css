@@ -5,7 +5,6 @@
 }
 .header {
   background-color: black;
-  position: fixed;
   width: 100%;
 }
 
@@ -401,12 +400,12 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 3;
-  height: 601px;
+  position: relative;
 }
 .section::after {
   content: "";
   width: 100%;
-  height: 601px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.45);
   position: absolute;
   top: 0;
@@ -420,16 +419,24 @@ h4 {
   z-index: 6;
 }
 
-/* .form {
+.form {
   margin-top: 180px;
   background: rgba(255, 255, 255, 1);
+  margin-left: -300px;
+  width: 370px;
+  height: 370px;
+  text-align: center;
+  border-radius: 8px;
 }
 .form input {
   border: none;
+  display: flex;
   border-bottom: 1px solid #e0e0e0;
-  background-color: transparent;
   outline: none;
   width: 252px;
+  padding-top: 44px;
+
+  margin-left: 59px;
 }
 .form h3 {
   font-family: "Open Sans";
@@ -440,20 +447,21 @@ h4 {
   display: flex;
   align-items: center;
   text-align: center;
-
+  padding: 16px 60px;
   color: #333333;
 }
-.form_grup {
-  position: relative;
-  margin-bottom: 32px;
-  background: rgba(189, 189, 189, 1);
+.form button {
+  text-align: center;
+  padding: 19px 140px;
+  margin-top: 56px;
+  background: #ec7979;
+  border-radius: 0px 0px 8px 8px;
+  height: 54px;
+  width: 100%;
 }
-
-.form_label {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-} */
+.form span {
+  color: #ec7979;
+}
 
 .block-axit h2 {
   font-family: "Raleway";
